@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.HelloWorld',
+  id: 'org.nativescript.groceries',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
   android: {
