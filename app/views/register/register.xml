@@ -1,0 +1,7 @@
+<Page loaded="loadRegister">
+    <StackLayout orientation="vertical">
+        <TextField hint="Email" text="{{email}}" keyboardType="email" autocapitalizationType="none" autocorrect="false" />
+        <TextField hint="Password" secure="true" text="{{password}}" />
+        <Button text="sign up" tap="signUp" />
+    </StackLayout>
+</Page>
