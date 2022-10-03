@@ -1,3 +1,21 @@
+Page {
+    background-color: white;
+    padding: 20;
+}
+
+TextField,
+Label {
+    height: 50;
+    font-size: 20
+}
+
 Button {
-    height: 50
+    border-radius: 5;
+    border-width: 1;
+    background-color: lightgray;
+    margin: 10 0;
+}
+
+Button:active {
+    background-color: whitesmoke;
 }

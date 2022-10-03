@@ -1,11 +1,14 @@
 <Page loaded="loaded">
     <GridLayout>
-        <TextField id="newItem" hint="Enter an item" text="{{newItem}}" backgroundColor="red" verticalAlignment="bottom"/>
-        <Button text="Add" tap="add" />
-        <ListView id="groceryList" items="{{ groceryList }}">
+        <StackLayout verticalAlignment="top">
+            <TextField id="newItem" hint="Enter an item" text="{{newItem}}"/>
+            <Button text="Add" tap="add" />
+        </StackLayout>
+        <ListView id="groceryList" items="{{ groceryList }}" verticalAlignment="bottom">
             <ListView.itemTemplate>
                 <Label text="{{name}}" textWrap="true" horizontalAlignment="left" verticalAlignment="center" />
             </ListView.itemTemplate>
         </ListView>
+        <ActivityIndicator busy="{{isLoading}}"/>
     </GridLayout>
 </Page>

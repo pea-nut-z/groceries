@@ -14,7 +14,9 @@ export function loaded(args) {
     page.bindingContext = pageData
     
     if (!pageData.groceryList.length) {
+        pageData.set("isLoading",true)
         groceryList.load()
+        pageData.set("isLoading",false)
     }
 }
 
@@ -28,6 +30,8 @@ export function add() {
         };
         alert(options)
     } else {
-        groceryList.add(item.text)
+        groceryList.add(item)
+        pageData.set("newItem", "")
+        page.getViewById("newItem").dismissSoftInput()
     }
 }
