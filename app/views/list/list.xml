@@ -6,7 +6,10 @@
         </StackLayout>
         <ListView id="groceryList" items="{{ groceryList }}" verticalAlignment="bottom">
             <ListView.itemTemplate>
-                <Label text="{{name}}" textWrap="true" horizontalAlignment="left" verticalAlignment="center" />
+                <GridLayout columns="*,auto">
+                    <Label text="{{name}}" textWrap="true" horizontalAlignment="left"/>
+                    <Image src="~/trash.png" stretch="aspectFill" tap="remove" ios:visibility="collapsed" col="1" verticalAlignment="center"/>
+                </GridLayout>
             </ListView.itemTemplate>
         </ListView>
         <ActivityIndicator busy="{{isLoading}}"/>

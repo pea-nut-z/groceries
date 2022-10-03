@@ -35,3 +35,10 @@ export function add() {
         page.getViewById("newItem").dismissSoftInput()
     }
 }
+
+export function remove(args) {
+    const item = args.view.bindingContext
+    const index = groceryList.indexOf(item)
+    groceryList.remove(index)
+        
+}

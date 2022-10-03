@@ -17,6 +17,10 @@ export function GroceryListViewModel(items){
         viewModel.push({name:item})
     }
 
+    viewModel.remove = function (index) {
+        viewModel.splice(index,1)
+    }
+
     viewModel.empty = function () {
         while (viewModel.length) {
         viewModel.pop()
