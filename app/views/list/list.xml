@@ -1,6 +1,8 @@
 <Page loaded="loaded">
     <GridLayout>
-        <ListView items="{{ groceryList }}">
+        <TextField id="newItem" hint="Enter an item" text="{{newItem}}" backgroundColor="red" verticalAlignment="bottom"/>
+        <Button text="Add" tap="add" />
+        <ListView id="groceryList" items="{{ groceryList }}">
             <ListView.itemTemplate>
                 <Label text="{{name}}" textWrap="true" horizontalAlignment="left" verticalAlignment="center" />
             </ListView.itemTemplate>

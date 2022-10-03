@@ -13,9 +13,6 @@ export const signIn = () => {
     // password = page.getViewById("password")
     // console.log(email.text);
     // console.log(password.text);
-
-
-    
 }
 
 export const register = () => {

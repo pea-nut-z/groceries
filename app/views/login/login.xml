@@ -1,6 +1,6 @@
 <Page loaded="loaded">
-    <StackLayout orientation="vertical">
-        <Image src="res://logo" stretch="none" horizontalAlignment="center" />
+    <StackLayout orientation="vertical" verticalAlignment="center">
+        <Image src="~/market.png" loadMode="async" stretch="aspectFill" horizontalAlignment="center" />
         <TextField id="email" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
         <TextField id="password" hint="Password" secure="true" />
         <Button text="Sign in" tap="signIn" />
