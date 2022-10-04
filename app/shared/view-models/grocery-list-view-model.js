@@ -1,4 +1,4 @@
-import { Observable,ObservableArray } from '@nativescript/core'
+import { ObservableArray } from '@nativescript/core'
 
 export function GroceryListViewModel(items){
     

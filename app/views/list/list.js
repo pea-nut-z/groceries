@@ -1,6 +1,7 @@
 
 import { fromObject } from "@nativescript/core";
 import {GroceryListViewModel} from "../../shared/view-models/grocery-list-view-model"
+
 let page;
 
 const groceryList = new GroceryListViewModel([])
@@ -10,6 +11,7 @@ const pageData = fromObject({
 })
 
 export function loaded(args) {
+    console.log("trigger loaded @ list");
     page = args.object
     page.bindingContext = pageData
     
